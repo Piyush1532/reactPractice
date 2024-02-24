@@ -2,6 +2,9 @@ import React from "react";
 import { increment, decrement, reset,incrementByAmount } from "./CounterSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
+
+
+
 const Counter = () => {
   const count = useSelector((state) => state.counter.count);
   const dispatch = useDispatch();
